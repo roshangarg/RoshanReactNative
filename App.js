@@ -3,6 +3,7 @@ import { React, useState } from "react";
 import { Alert, Button, FlatList, StyleSheet, Text, TouchableOpacity, TouchableWithoutFeedback, View, Keyboard } from "react-native";
 import AddTodos from "./Components/AddTodos";
 import Header from "./Components/Header";
+
 import TodoItem from "./Components/TodoItem";
 
 export default function App() {
@@ -47,6 +48,7 @@ export default function App() {
       }
   }
   return (
+    // <SandBod/>
   <TouchableWithoutFeedback  
   onPress={()=> {
     Keyboard.dismiss();
@@ -69,11 +71,13 @@ export default function App() {
             />
 
           </View>
-        </View>
+        </View> 
      
 
     </View>
     </TouchableWithoutFeedback>
+
+
   );
 }
 
@@ -85,9 +89,11 @@ const styles = StyleSheet.create({
     // justifyContent: "center",
   },
   content:{
-    padding:40
+    padding:40,
+    flex:1
   },
   list:{
+    flex:1,
     marginTop:10
   }
 
